@@ -1,0 +1,43 @@
+\documentclass{book}
+
+\begin{document}
+
+% When commands appear in a group {}, they apply to the whole group. So in the
+% first line below, the bold applies to the whole group, resulting in a bold
+% phrase followed by a bold-italic phrase. In the second line below, the bold
+% and italic commands appear in separate groups and are restricted to their
+% respective groups.
+{\bfseries Some bold text \itshape and some bold-italic text.}
+
+{\bfseries Some bold text} {\itshape and some italic text.}
+
+% The first non-space object after a command is an argument. So in the first
+% command below only the S is bold, whereas in the second command below the
+% entire phrase is bold because the whole group is the argument.
+\textbf Some bold text.
+\textbf{Some bold text.}
+
+% Empty arguments can be specified by {}. This is useful: spaces immediately
+% following a command are ignored, like this:
+\TeX nician
+
+% To force a space after a command, use {}, like this:
+\TeX{} nician
+
+% {} is also used if you want to give no argument where one is required. E.g.
+% \chapter requires the chapter title as an argument, so \chapter{} results
+% in a chapter heading with no title.
+\chapter{Needs a title} % Title is mandatory
+\chapter{} % Title omitted by being empty
+
+% Optional arguments are in []. E.g. the \\ command has an optional argument
+% to specify the gap:
+Line 1 \\Line 2
+
+Line 3 followed by a 1cm gap \\[1cm]Line 4
+
+% Multiple optional arguments are each in []. E.g. right-justified text in a
+% 5cm wide box:
+\framebox[5cm][r]{Text in a box.}
+
+\end{document}
