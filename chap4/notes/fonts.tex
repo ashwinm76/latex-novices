@@ -1,0 +1,92 @@
+% 4.5 Fonts
+
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{textcomp}
+
+\begin{document}
+
+\begin{figure}[H]
+\caption{Font Changing Text-Block Commands}
+\label{}
+\begin{center}
+    \begin{tabular}{l|l l}
+    \toprule
+    \textbf{Command} & \textbf{Example Input} & \textbf{Corresponding Output} \\
+    & & (Computer Modern) \\
+    \midrule
+    \verb|\textrm{|$\langle text\rangle$\verb|}| & \verb|\textrm{roman} text| & \textrm{roman} text \\
+    \verb|\textsf{|$\langle text\rangle$\verb|}| & \verb|\textsf{sans serif} text| & \textsf{sans serif} text \\
+    \verb|\texttt{|$\langle text\rangle$\verb|}| & \verb|\texttt{typewriter} text| & \texttt{typewriter} text \\
+    & & \\
+    \verb|\textmd{|$\langle text\rangle$\verb|}| & \verb|\textmd{medium} text| & \textmd{medium} text \\
+    \verb|\textbf{|$\langle text\rangle$\verb|}| & \verb|\textbf{bold} text| & \textbf{bold} text \\
+    & & \\
+    \verb|\textup{|$\langle text\rangle$\verb|}| & \verb|\textup{upright} text| & \textup{upright} text \\
+    \verb|\textit{|$\langle text\rangle$\verb|}| & \verb|\textit{italic} text| & \textit{italic} text \\
+    \verb|\textsl{|$\langle text\rangle$\verb|}| & \verb|\textsl{slanted} text| & \textsl{slanted} text \\
+    & & \\
+    \verb|\textsc{|$\langle text\rangle$\verb|}| & \verb|\textsc{Small Caps} text| & \textsc{Small Caps} text \\
+    \verb|\emph{|$\langle text\rangle$\verb|}| & \verb|\emph{emphasized} text| & \emph{emphasized} text \\
+    & & \\
+    \verb|\textnormal{|$\langle text\rangle$\verb|}| & \verb|\textnormal{default} text| & \textnormal{default} text \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Font Changing Declarations}
+\label{}
+\begin{center}
+    \begin{tabular}{l|l l}
+    \toprule
+    \textbf{Command} & \textbf{Example Input} & \textbf{Corresponding Output} \\
+    & & (Computer Modern) \\
+    \midrule
+    \verb|\rmfamily| & \verb|\rmfamily roman text| & \rmfamily roman text \\
+    \verb|\sffamily| & \verb|\sffamily sans serif text| & \sffamily sans serif text \\
+    \verb|\ttfamily| & \verb|\ttfamily typewriter text| & \ttfamily typewriter text \\
+    & & \\
+    \verb|\mdseries| & \verb|\mdseries medium text| & \mdseries medium text \\
+    \verb|\bfseries| & \verb|\bfseries bold text| & \bfseries bold text \\
+    & & \\
+    \verb|\upshape| & \verb|\upshape upright text| & \upshape upright text \\
+    \verb|\itshape| & \verb|\itshape italic text| & \itshape italic text \\
+    \verb|\slshape| & \verb|\slshape slanted text| & \slshape slanted text \\
+    \verb|\scshape| & \verb|\scshape Small Caps text| & \scshape Small Caps text \\
+    & & \\
+    \verb|\em| & \verb|\em emphasized text| & \em emphasized text \\
+    & & \\
+    \verb|\normalfont| & \verb|\normalfont default text| & \normalfont default text \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Font Size Changing Declarations}
+\label{}
+\begin{center}
+    \begin{tabular}{l|l l}
+    \toprule
+    \textbf{Command} & \textbf{Example Input} & \textbf{Corresponding Output} \\
+    \midrule
+    \verb|\tiny| & \verb|\tiny tiny text| & \tiny tiny text \\
+    \verb|\scriptsize| & \verb|\scriptsize script size| & \scriptsize script size \\
+    \verb|\footnotesize| & \verb|\footnotesize footnote size| & \footnotesize footnote size \\
+    \verb|\small| & \verb|\small small text| & \small small text \\
+    \verb|\normalsize| & \verb|\normalsize normal size| & \normalsize normal size \\
+    \verb|\large| & \verb|\large large text| & \large large text \\
+    \verb|\Large| & \verb|\Large even larger| & \Large even larger \\
+    \verb|\LARGE| & \verb|\LARGE larger still| & \LARGE larger still \\
+    \verb|\huge| & \verb|\huge huge| & \huge huge \\
+    \verb|\Huge| & \verb|\Huge extra huge| & \Huge extra huge \\
+    \bottomrule
+    \end{tabular}
+\end{center}
+\end{figure}
+
+\end{document}

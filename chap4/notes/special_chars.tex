@@ -1,0 +1,164 @@
+% 4.3 Special Characters and Symbols
+
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{minipage}{\textwidth}
+Symbols:
+\vspace{1\baselineskip}
+
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{l|l}
+\toprule
+  \verb|\textbackslash|           & \textbackslash      \\ 
+  \verb|\textasciicircum|         & \textasciicircum    \\
+  \verb|\textasciitilde|          & \textasciitilde     \\
+  \verb|\pounds|                  & \pounds             \\
+  \verb|\textregistered|          & \textregistered     \\
+  \verb|\texttrademark|           & \texttrademark      \\
+  \verb|\copyright|               & \copyright          \\
+  \verb|\textbullet|              & \textbullet         \\
+  \verb|\textquestiondown|        & \textquestiondown   \\ 
+  \verb|\textexclamdown|          & \textexclamdown     \\
+  \verb|--- or \textemdash|       & \textemdash         \\
+  \verb|\ldots|                   & \ldots              \\
+  \verb|\textgreater|             & \textgreater        \\
+  \verb|\textbar|                 & \textbar            \\
+  \verb|\textless|                & \textless           \\
+  \verb|\dag|                     & \dag                \\
+  \verb|\ddag|                    & \ddag               \\
+  \verb|\’ or \textquoteright|    & ’                   \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{l|l}
+\toprule
+  \verb|‘ or \textquoteleft|      & ‘                   \\
+  \verb|’’ or \textquotedblright| & ''                  \\
+  \verb|‘‘ or \textquotedblleft|  & ''                  \\
+  \verb|-- or \textendash|        & \textendash         \\
+  \verb|\textperiodcentered|      & \textperiodcentered \\
+  \verb|\_ or \textunderscore|    & \_                  \\ 
+  \verb|\slash|                   & \slash              \\
+  \verb|\$|                       & \$                  \\
+  \verb|\{|                       & \{                  \\
+  \verb|\}|                       & \}                  \\
+  \verb|\#|                       & \#                  \\
+  \verb|\%|                       & \%                  \\
+  \verb|\&|                       & \&                  \\
+  \verb|\i|                       & \i                  \\
+  \verb|\j|                       & \j                  \\
+  \verb|-|                        & -                   \\
+  \verb|\S|                       & \S                  \\
+  \verb|\P|                       & \P                  \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{minipage}
+
+\vspace{1\baselineskip}
+
+Ligatures and special symbols:
+\vspace{1\baselineskip}
+
+\begin{minipage}{0.25\textwidth}
+  \begin{tabular}{l|l}
+    \toprule
+    \verb|\AE|  & \AE    \\
+    \verb|\ae|  & \ae    \\
+    \verb|\OE|  & \OE    \\
+    \verb|\oe|  & \oe    \\
+    \bottomrule
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+  \begin{tabular}{l|l}
+    \toprule
+    \verb|fi|   & fi     \\
+    \verb|ffi|  & ffi    \\
+    \verb|fl|   & fl     \\
+    \verb|ffl|  & ffl    \\
+    \bottomrule
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+  \begin{tabular}{l|l}
+    \toprule
+    \verb|\AA|  & \AA    \\
+    \verb|\aa|  & \aa    \\
+    \verb|\L|   & \L     \\
+    \verb|\l|   & \l     \\
+    \bottomrule
+  \end{tabular}
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+  \begin{tabular}{l|l}
+    \toprule
+    \verb|\O|   & \O     \\
+    \verb|\o|   & \o     \\
+    \verb|\SS|  & \SS    \\
+    \verb|\ss|  & \ss    \\
+    \bottomrule
+  \end{tabular}
+\end{minipage}
+
+\vspace{1\baselineskip}
+
+\begin{minipage}{\textwidth}
+Accent commands:
+
+\vspace{1\baselineskip}
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{lcc}
+\toprule
+& \multicolumn{2}{c}{Example} \\
+Definition & Input & Output \\
+\midrule
+  \verb|\'{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\'{c}| & \'{c} \\
+  \verb|\`{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\`{c}| & \`{c} \\
+  \verb|\^{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\^{c}| & \^{c} \\
+  \verb|\"{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\"{c}| & \"{c} \\
+  \verb|\u{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\u{c}| & \u{c} \\
+  \verb|\t{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\t{xy}| & \t{xy} \\
+  \verb|\d{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\d{c}| & \d{c} \\
+  \verb|\r{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\r{c}| & \r{c} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{lcc}
+\toprule
+& \multicolumn{2}{c}{Example} \\
+Definition & Input & Output \\
+\midrule
+  \verb|\={|\textlangle\verb|object|\textrangle \verb|}| & \verb|\={c}| & \={c} \\
+  \verb|\.{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\.{c}| & \.{c} \\
+  \verb|\~{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\~{c}| & \~{c} \\
+  \verb|\v{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\v{c}| & \v{c} \\
+  \verb|\H{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\H{c}| & \H{c} \\
+  \verb|\c{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\c{c}| & \c{c} \\
+  \verb|\b{|\textlangle\verb|object|\textrangle \verb|}| & \verb|\b{c}| & \b{c} \\
+  \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+
+\vspace{1\baselineskip}
+More info:
+\begin{itemize}
+    \item \href{http://mirror.ctan.org/info/symbols/comprehensive}{Scott Pakin. The comprehensive \LaTeX symbol list. 2009.} 
+    
+    or \verb|texdoc symbols|
+    \item \href{https://detexify.kirelabs.org/classify.html}{detexify}
+\end{itemize}
+\end{minipage}
+
+\vspace{1\baselineskip}
+See Section 4.3.1 for how to use the \emph{inputenc} package to directly input
+the character instead of using the ligature commands described above.
+
+\end{document}

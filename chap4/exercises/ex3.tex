@@ -1,0 +1,24 @@
+% Exercise 3 (Using the datetime Package)
+
+\documentclass[12pt]{scrartcl}
+
+% datetime options:
+% short: abbreviated format
+% nodayofweek: don't display the day of the week
+% level: put the "th" at the same level as the text.
+% 12hr or 24hr: select 12 or 24 hour format
+%\usepackage[short,nodayofweek,level,12hr]{datetime}
+%\usepackage[short,nodayofweek,level,24hr]{datetime}
+%\usepackage[short,nodayofweek,12hr]{datetime}
+%\usepackage[nodayofweek,12hr]{datetime}
+\usepackage[short,12hr]{datetime}
+
+\begin{document}
+
+This is a simple \LaTeX\ document. Here is the first paragraph.
+
+Here is the second paragraph\footnote{with a footnote}. As you
+can see it's a rather short paragraph, but not as short as the
+previous one. This document was created on: \today\ at \currenttime.
+
+\end{document}
