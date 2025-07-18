@@ -18,3 +18,13 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 - ex5.tex - Exercise 5: Lists
 - ex6.tex - Exercise 6: Fonts
 - ex7.tex - Exercise 7: Aligning Material
+
+# Chapter 5
+## Exercises
+- ex8.tex  - Exercise 8: Creating Title Pages
+- ex9.tex  - Exercise 9: Creating an Abstract
+- ex10.tex - Exercise 10: Creating Chapters, Sections etc.
+- ex11.tex - Exercise 11: Creating a Table of Contents
+- ex12.tex - Exercise 12: Cross-Referencing
+- ex13.tex - Exercise 13: Creating a Bibliography
+- ex14.tex - Exercise 14: Page Styles and Page Numbering
