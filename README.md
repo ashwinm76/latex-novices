@@ -28,3 +28,7 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 - ex12.tex - Exercise 12: Cross-Referencing
 - ex13.tex - Exercise 13: Creating a Bibliography
 - ex14.tex - Exercise 14: Page Styles and Page Numbering
+
+# Chapter 6
+## Exercises
+- ex15.tex - Exercise 15: Using the graphicx Package
