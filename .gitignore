@@ -7,4 +7,6 @@
 *.out
 *.gz
 *.code-workspace
+*.lof
+*.lot
 *.pdf

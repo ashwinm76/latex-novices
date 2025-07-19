@@ -32,3 +32,9 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 # Chapter 6
 ## Exercises
 - ex15.tex - Exercise 15: Using the graphicx Package
+
+# Chapter 7
+## Exercises
+- ex16.tex - Exercise 16: Creating Figures
+- ex17.tex - Exercise 17: Creating Tables
+- ex18.tex - Exercise 18: Creating Sub-Figures
