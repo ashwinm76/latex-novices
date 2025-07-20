@@ -38,3 +38,9 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 - ex16.tex - Exercise 16: Creating Figures
 - ex17.tex - Exercise 17: Creating Tables
 - ex18.tex - Exercise 18: Creating Sub-Figures
+
+# Chapter 8
+## Exercises
+- ex19.tex - Exercise 19: Defining a New Command
+- ex20.tex - Exercise 20: Defining Commands with an Optional Argument
+- ex21.tex - Exercise 21: Renewing Commands

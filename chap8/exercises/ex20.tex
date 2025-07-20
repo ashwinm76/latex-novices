@@ -1,0 +1,33 @@
+% Exercise 20 (Defining Commands with an Optional Argument)
+
+\documentclass{scrartcl}
+
+\usepackage{color}
+\usepackage{makeidx}
+
+\makeindex
+
+\newcommand*{\cost}[2][excl VAT @ 17.5\%]{\pounds #2 #1}
+\newcommand*{\keyword}[2][\keywordentry]{%
+    \def\keywordentry{#2}%
+    \textsf{\slshape\color{blue} #2}%
+    \index{#1}%
+}
+
+\begin{document}
+
+A \keyword{command} usually begins with a backslash.
+
+Segments of code may be \keyword[group]{grouped}.
+
+Some \keyword[command]{commands} take one or more \keyword[argument]{arguments}.
+
+\begin{enumerate}
+    \item \cost{50}
+    \item \cost[incl VAT]{20}
+    \item \cost[excl VAT @ 20\%]{55}
+\end{enumerate}
+
+\printindex
+
+\end{document}

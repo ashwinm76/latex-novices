@@ -1,0 +1,22 @@
+% Exercise 19 (Defining a New Command)
+
+\documentclass{scrartcl}
+
+\usepackage{color}
+\usepackage{makeidx}
+
+\makeindex
+
+\newcommand*{\keyword}[1]{\textsf{\slshape\color{blue} #1}\index{#1}}
+
+\begin{document}
+
+A \keyword{command} usually begins with a backslash.
+
+Segments of code may be \keyword{grouped}.
+
+Some \keyword{commands} take one or more \keyword{arguments}.
+
+\printindex
+
+\end{document}

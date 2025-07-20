@@ -9,4 +9,7 @@
 *.code-workspace
 *.lof
 *.lot
+*.idx
+*.ilg
+*.ind
 *.pdf

@@ -1,0 +1,156 @@
+% Exercise 21 (Renewing Commands)
+
+\documentclass[12pt]{scrbook}
+
+% datetime options:
+% short: abbreviated format
+% nodayofweek: don't display the day of the week
+% level: put the "th" at the same level as the text.
+% 12hr or 24hr: select 12 or 24 hour format
+%\usepackage[short,nodayofweek,level,12hr]{datetime}
+%\usepackage[short,nodayofweek,level,24hr]{datetime}
+%\usepackage[short,nodayofweek,12hr]{datetime}
+%\usepackage[nodayofweek,12hr]{datetime}
+\usepackage[T1]{fontenc}
+\usepackage[short,12hr]{datetime}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+
+\pagestyle{headings}
+
+\title{A Simple Document}
+\author{Ashwin Menon}
+
+\addto{\captionsenglish}{%
+    \renewcommand{\figurename}{Fig}%
+    \renewcommand{\tablename}{Tab}%
+}
+
+\begin{document}
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Summary}
+A brief document to
+illustrate how to use \LaTeX.
+
+\mainmatter
+
+\chapter{Introduction}
+\label{ch:intro}
+
+\section{The First Section}
+This is a simple \LaTeX\ document. Here is the first paragraph.
+The next chapter is Chapter~\ref{ch:another}
+and is on page~\pageref{ch:another}.
+The next section is Section~\ref{sec:next}.
+
+\section{The Next Section}
+\label{sec:next}
+
+Here is the second paragraph\footnote{with a footnote}. As you
+can see it's a rather short paragraph, but not as short as the
+previous one. This document was created on: \today\ at \currenttime.
+
+\section{The Shapes Section}
+Here are some shapes inline: \includegraphics[height=1ex]{shapes}
+
+Here are some shapes rotated inline: \includegraphics[height=1ex,angle=60]{shapes}
+
+Here are some shapes in a separate paragraph:
+
+\includegraphics{shapes}
+
+Figure~\ref{fig:shapes} shows a picture of shapes in a \emph{figure} environment:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{shapes}
+    \caption{Some shapes}
+    \label{fig:shapes}
+\end{figure}
+
+\section{The Funky Text Section}
+Rotating text: \rotatebox{90}{straight up}
+\rotatebox{45}{rising up}
+\rotatebox[origin=cB]{45}{rising up} % origin = (c)enter (B)aseline
+\rotatebox[units=-360]{45}{falling down}
+that's all.
+
+\resizebox{20mm}{1cm}{Squished text}
+\resizebox{!}{1cm}{Big text}
+
+\chapter{Another Chapter}
+\label{ch:another}
+
+Here's another very interesting chapter.
+We're going to put a picture here later.
+See Chapter~\ref{ch:intro} for an introduction.
+
+\chapter{Tables}
+
+Table \ref{tab:travel_expenses} shows travel expenses.
+\begin{table}[htbp]
+    \caption{Travel Expenses}
+    \label{tab:travel_expenses}
+    \centering
+    \begin{tabular}{lrr}
+                        & \multicolumn{2}{c}{\bfseries Expenditure (\pounds)} \\
+                        & \multicolumn{1}{c}{Year1} & \multicolumn{1}{c}{Year2} \\
+    \bfseries Travel    & 100,000 & 110,000 \\
+    \bfseries Equipment & 50,000  & 60,000
+    \end{tabular}
+\end{table}
+
+Table \ref{tab:sample_table} is a sample table.
+\begin{table}[htbp]
+    \caption{A Sample Table}
+    \label{tab:sample_table}
+    \centering
+    \begin{tabular}{lr}
+        Item  & Cost \\
+        Video & 8.99 \\
+        CD    & 9.99 \\
+        DVD   & 15.00 \\
+    \end{tabular}
+\end{table}
+
+\chapter{Recommended Reading}
+For a basic introduction to \LaTeX\ see Lamport~\cite{lamport94}. For more
+detailed information about \LaTeX\ and associated applications, consult
+Kopka and Daly~\cite{kopka95} or Goossens \emph{et al}~\cite{goossens94}.
+
+\chapter*{Acknowledgements}
+
+I would like to acknowledge all those
+very helpful people who have assisted me in my work,
+
+\appendix
+
+\chapter{Tables}
+
+\begin{tabular}{lrr}
+                     & \multicolumn{2}{c}{\bfseries Expenditure (\pounds)} \\
+                     & \multicolumn{1}{c}{Year1} & \multicolumn{1}{c}{Year2} \\
+ \bfseries Travel    & 100,000 & 110,000 \\
+ \bfseries Equipment & 50,000  & 60,000
+\end{tabular}
+
+\begin{thebibliography}{Goossens 1994}
+    \bibitem[Lamport 1994]{lamport94} ''\LaTeX\ : a document preparation system'',
+    Leslie Lamport, 2nd edition (updated for \LaTeXe), Addison-Wesley (1994).
+
+    \bibitem[Kopka 1995]{kopka95} ''A Guide to \LaTeX: document preparation for
+    beginners and advanced users'', Helmut Kopka and Patrick W. Daly, 
+    Addison-Wesley (1995).
+
+    \bibitem[Goossens 1994]{goossens94} ''The \LaTeX\ Companion'', Michel Goossens,
+    Frank Mittelbach and Alexander Samarin, Addison-Wesley (1994).
+\end{thebibliography}
+
+\end{document}
