@@ -1,11 +1,11 @@
 These are solved exercises and notes created while reading "LaTeX for Complete
 Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 
-# Chapter 2
+# Chapter 2 - Some Definitions
 ## Notes
 - grouping.tex - Grouping
 
-# Chapter 4
+# Chapter 4 - Creating a Simple Document
 ## Notes
 - special_chars.tex - 4.3 Special Characters and Symbols
 - fonts.tex - 4.5 Fonts
@@ -19,7 +19,7 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 - ex6.tex - Exercise 6: Fonts
 - ex7.tex - Exercise 7: Aligning Material
 
-# Chapter 5
+# Chapter 5 - Structuring Your Document
 ## Exercises
 - ex8.tex  - Exercise 8: Creating Title Pages
 - ex9.tex  - Exercise 9: Creating an Abstract
@@ -29,18 +29,26 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 - ex13.tex - Exercise 13: Creating a Bibliography
 - ex14.tex - Exercise 14: Page Styles and Page Numbering
 
-# Chapter 6
+# Chapter 6 - The graphicx Package
 ## Exercises
 - ex15.tex - Exercise 15: Using the graphicx Package
 
-# Chapter 7
+# Chapter 7 - Floats
 ## Exercises
 - ex16.tex - Exercise 16: Creating Figures
 - ex17.tex - Exercise 17: Creating Tables
 - ex18.tex - Exercise 18: Creating Sub-Figures
 
-# Chapter 8
+# Chapter 8 - Defining Commands
 ## Exercises
 - ex19.tex - Exercise 19: Defining a New Command
 - ex20.tex - Exercise 20: Defining Commands with an Optional Argument
 - ex21.tex - Exercise 21: Renewing Commands
+
+# Chapter 9 - Mathematics
+## Exercises
+- ex22.tex - Exercise 22: Maths: Fractions and Symbols
+- ex23.tex - Exercise 23: Maths: Vectors and Arrays
+- ex24.tex - Exercise 24: More Mathematics
+## Notes
+- mathnotes.tex - Various math notes

@@ -1,0 +1,218 @@
+% Various math mode notes
+
+\documentclass{scrartcl}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand*{\pderiv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand*{\e}{\mathrm{e}}
+
+\begin{document}
+
+\section{Dots and Delimiters}
+
+Various dots:
+\begin{align*}
+    \text{dotsb:}\ y = a_1 + a_2 + \dotsb + a_n\\
+    \text{cdots:}\ y = a_1 + a_2 + \cdots + a_n\\
+    \text{ldots:}\ y = a_1 + a_2 + \ldots + a_n\\
+    \text{dotsc:}\ y = a_1 + a_2 + \dotsc + a_n\\
+    \text{dotsi:}\ y = a_1 + a_2 + \dotsi + a_n\\
+    \text{dotso:}\ y = a_1 + a_2 + \dotso + a_n\\
+    \text{dotsm:}\ y = a_1 + a_2 + \dotsm + a_n
+\end{align*}
+
+Various delimiters:
+\begin{align*}
+    \text{( ):}   &(\frac{1}{1+x}) \\
+    \text{[ ]:}   &[\frac{1}{1+x}] \\
+    \text{\{ \}:} &\{\frac{1}{1+x}\} \\
+    \text{left lvert, right rvert:} &\left\lvert\frac{1}{1+x}\right\rvert \\
+    \text{left lVert, right rVert:} &\left\lVert\frac{1}{1+x}\right\rVert \\
+    \text{left langle, right rangle:} &\left\langle\frac{1}{1+x}\right\rangle\\
+    \text{left lfloor, right rfloor:} &\left\lfloor\frac{1}{1+x}\right\rfloor\\
+    \text{left lceil, right rceil:} &\left\lceil\frac{1}{1+x}\right\rceil\\
+    \text{uparrow, downarrow:} &\left\uparrow\frac{1}{1+x}\right\downarrow\\
+    \text{Uparrow, Downarrow:} &\left\Uparrow\frac{1}{1+x}\right\Downarrow\\
+    \text{updownarrow, updownarrow:} &\left\updownarrow\frac{1}{1+x}\right\updownarrow\\
+    \text{/, /:} &\left/\frac{1}{1+x}\right/\\
+    \text{\textbackslash backslash, \textbackslash backslash:} &\left\backslash\frac{1}{1+x}\right\backslash\\
+\end{align*}
+
+Various delimiter sizess:
+\begin{align*}
+    \text{( ):}   &(\frac{1}{1+x}) \\
+    \text{bigl( bigr):}   &\bigl(\frac{1}{1+x}\bigr) \\
+    \text{Bigl( Bigr):}   &\Bigl(\frac{1}{1+x}\Bigr) \\
+    \text{biggl( biggr):}   &\biggl(\frac{1}{1+x}\biggr) \\
+    \text{Biggl( Biggr):}   &\Biggl(\frac{1}{1+x}\Biggr) \\
+\end{align*}
+
+\section{Equations}
+
+Huge equation:
+\[
+    \pderiv{^2 \mathcal{L}}{{z_i^\rho}^2} = 
+    -\pderiv{\rho_i}{z_i^\rho}
+    \left(
+        \pderiv{v_i}{\rho_i}\frac{\e^{v_i}}{1-\e^{v_i}}
+        +v_i\frac
+        {\e^{v_i}\pderiv{v_i}{\rho_i}\left(1-\e^{v_i}\right) + \e^{2v_i}\pderiv{v_i}{\rho_i}}
+        {(1-\e^{v_i})^2}
+    \right)
+\]
+
+\section{Arrays}
+
+Basic arrays:
+
+Using \emph{array}:
+\[
+\begin{array}{rrr}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{array}
+\]
+
+The same but with \emph{pmatrix} from \emph{amsmath}:
+\[
+\begin{pmatrix}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{pmatrix}
+\]
+
+The same but with \emph{bmatrix} from \emph{amsmath}:
+\[
+\begin{bmatrix}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{bmatrix}
+\]
+
+The same but with \emph{Bmatrix} from \emph{amsmath}:
+\[
+\begin{Bmatrix}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{Bmatrix}
+\]
+
+The same but with \emph{vmatrix} from \emph{amsmath}:
+\[
+\begin{vmatrix}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{vmatrix}
+\]
+
+The same but with \emph{Vmatrix} from \emph{amsmath}:
+\[
+\begin{Vmatrix}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{Vmatrix}
+\]
+
+Arrays with delimiters:
+\[
+\left(
+    \begin{array}{rrr}
+        1 & 2 & 3\\
+        4 & 5 & 6\\
+        7 & 8 & 9
+    \end{array}
+\right)
+\]
+
+Arrays with vertical rules:
+\[
+\begin{array}{rr|r}
+    1 & 2 & 3\\
+    4 & 5 & 6\\
+    7 & 8 & 9
+\end{array}
+\]
+
+Arrays with invisible delimiters (the right delimiter is invisible):
+\[
+    f(x) = 
+    \left\{
+    \begin{array}{rl}
+        -1 & x < 0\\
+         0 & x = 0\\
+        +1 & x > 0
+    \end{array}    
+    \right.
+\]
+
+Writing the above using the \emph{amsmath} cases environment:
+\[
+    f(x) = 
+    \begin{cases}
+        -1 & x < 0\\
+         0 & x = 0\\
+        +1 & x > 0
+    \end{cases}
+\]
+
+Inline matrices are written using the \emph{smallmatrix} environment
+\begin{math}
+    \left(
+        \begin{smallmatrix}
+            1 & 2 & 3\\
+            4 & 5 & 6
+        \end{smallmatrix}
+    \right)
+\end{math}
+within the line of text. Hoe many rows are realistic?
+\begin{math}
+    \left(
+        \begin{smallmatrix}
+            1 & 2 & 3\\
+            4 & 5 & 6\\
+            7 & 8 & 9
+        \end{smallmatrix}
+    \right)
+\end{math}
+
+\section{Vectors}
+
+Here is a vector: $\vec{v}$.
+
+Redefining the \emph{vec} command to typeset vectors in bold (without the arrow
+above it), as is the convention in some texts:
+
+\let\origvec\vec
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\[
+    \vec{x}\cdot\vec{\xi} = z
+\]
+
+The \emph{boldsymbol} command from the \emph{amsfonts} package can be used to ensure
+that the greek letters are bold as well. Note however that a side effect of this
+command is that the result is both bold and italic:
+
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+
+\[
+    \vec{x}\cdot\vec{\xi} = z
+\]
+
+\let\vec\origvec
+
+Default vector arrow (which can be too small) vs the \emph{overrightarrow} command:
+\[
+    \vec{OP}\ \text{vs}\ \overrightarrow{OP}
+\]
+
+\end{document}
