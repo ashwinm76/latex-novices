@@ -52,3 +52,11 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 - ex24.tex - Exercise 24: More Mathematics
 ## Notes
 - mathnotes.tex - Various math notes
+
+# Chapter 10 - Defining Environments
+## Exercises
+- ex25.tex - Defining a New Environment
+
+# Chapter 11 - Counters
+## Exercises
+- ex26.tex - Using Counters
