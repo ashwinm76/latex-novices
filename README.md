@@ -1,5 +1,5 @@
 These are solved exercises and notes created while reading "LaTeX for Complete
-Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
+Novices" by Nicola L. C. Talbot (https://www.dickimaw-books.com/latex/novices/).
 
 # Chapter 2 - Some Definitions
 ## Notes
@@ -55,8 +55,8 @@ Novices" by Nicola L. C. Talbot (http://www.dickimaw-books.com/).
 
 # Chapter 10 - Defining Environments
 ## Exercises
-- ex25.tex - Defining a New Environment
+- ex25.tex - Exercise 25: Defining a New Environment
 
 # Chapter 11 - Counters
 ## Exercises
-- ex26.tex - Using Counters
+- ex26.tex - Exercise 26: Using Counters
